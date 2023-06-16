@@ -6,11 +6,12 @@
 */
 int main(void)
 {
-	char rev_lowercase;
+	char rev_lowercase = 'z';
 
-	for (rev_lowercase = 'z'; rev_lowercase >= 'a'; rev_lowercase--)
+	while (rev_lowercase >= 'a')
 	{
 		putchar(rev_lowercase);
+		rev_lowercase--;
 	}
 	putchar('\n');
 	return (0);

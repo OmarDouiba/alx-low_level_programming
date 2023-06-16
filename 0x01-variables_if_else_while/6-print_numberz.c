@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - Print all single digit numbers of base 10 starting from 0 using Printf.
+* main - Print all single digit numbers of base 10 starting from 0 using Putchar.
 *
 * Return: Always (0).
 */
@@ -10,8 +10,8 @@ int main(void)
 
 	for (base10 = 0; base10 <= 9; base10++)
 	{
-		printf("%d", base10);
+		putchar(base10 + '0');
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }

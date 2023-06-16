@@ -17,7 +17,7 @@ int main(void)
 	}
 	while (alp_upper_case <= 'Z')
 	{
-		putchar(alp_uper_ase);
+		putchar(alp_upper_case);
 		alp_upper_case++;
 	}
 	putchar('\n');

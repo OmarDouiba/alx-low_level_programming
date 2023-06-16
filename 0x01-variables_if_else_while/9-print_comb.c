@@ -15,7 +15,8 @@ int main(void)
 		{
 			break;
 		}
-		putchar(',');	
+		putchar(',');
+		putchar(' ');
 		s_digit_c++;
 	}
 	putchar('\n');

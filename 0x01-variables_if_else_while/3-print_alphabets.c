@@ -7,15 +7,18 @@
 
 int main(void)
 {
-	char alp_lowerUperCase;
+	char alp_lower_case = 'a';
+	char alp_upper_case = 'A';
 
-	for (alp_lowerUperCase = 'a'; alp_lowerUperCase <= 'z'; alp_lowerUperCase++)
+	while (alp_lower_case <= 'z')
 	{
-		putchar(alp_lowerUperCase);
+		putchar(alp_lower_case);
+		alp_lower_case++;
 	}
-	for (alp_lowerUperCase = 'A'; alp_lowerUperCase <= 'Z'; alp_lowerUperCase++)
+	while (alp_upper_case <= 'Z')
 	{
-		putchar(alp_lowerUperCase);
+		putchar(alp_uper_ase);
+		alp_upper_case++;
 	}
 	putchar('\n');
 	return (0);

@@ -20,7 +20,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			two_digits1++;
+			two_digits2++;
 		}
 		two_digits2 = 0;
 		two_digits1++;

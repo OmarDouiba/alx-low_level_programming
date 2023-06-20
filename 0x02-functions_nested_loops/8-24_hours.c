@@ -1,6 +1,8 @@
 #include "main.h"
 /**
-* jack_bauer - Prints the 9 times table, starting with 0.
+* jack_bauer - .Prints every minute of the day.
+* @n1: hour
+* @n2: minute
 *
 * Auth  DOUIBA Omar.
 *

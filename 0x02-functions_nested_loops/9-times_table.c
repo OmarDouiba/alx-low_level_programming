@@ -28,10 +28,10 @@ void times_table(void)
 			if (n2 < 9)
 			{
 				_putchar(',');
-				_putchar('.');
+				_putchar(' ');
 				if (n3 <= 9 && ((n2 + 1) * n1) <= 9)
 				{
-					_putchar('.');
+					_putchar(' ');
 				}
 			}
 			n2++;

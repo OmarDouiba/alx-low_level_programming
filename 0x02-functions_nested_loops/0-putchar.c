@@ -3,6 +3,8 @@
 /**
 * main - check the code
 *
+* Auth: DOUIBA Omar
+*
 * Return: On success 0.
 */
 

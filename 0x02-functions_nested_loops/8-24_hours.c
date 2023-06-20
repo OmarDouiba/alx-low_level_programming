@@ -1,8 +1,6 @@
 #include "main.h"
 /**
 * jack_bauer - .Prints every minute of the day.
-* @n1: hour
-* @n2: minute
 *
 * Auth  DOUIBA Omar.
 *

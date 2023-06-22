@@ -2,7 +2,7 @@
 /**
 * _isdigit - function that checks for a digit (0 through 9).
 *
-* @c: 
+* @c: The digit we should chec.
 *
 * Auth: DOUIBA Omar.
 *
@@ -11,7 +11,7 @@
 
 int _isdigit(int c)
 {
-	if (!(c >= 'a' && c <= 'z') && !(c >= 'A' && c <= 'Z'))
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}

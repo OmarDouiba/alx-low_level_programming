@@ -2,7 +2,7 @@
 /**
 * print_diagonal - function that draws a diagonal line on the terminal.
 *
-* @n: n is the number of times the character \ should be printed.
+* @n: the number of times the character \ should be printed.
 *
 * Auth: DOUIBA Omar.
 */

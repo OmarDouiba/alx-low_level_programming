@@ -10,20 +10,20 @@
 
 int main(void)
 {
-	int div = 2;
-	long int prime_factor = 612852475143;
+	int prime_factor = 2;
+	long int num = 612852475143;
 
-	while (prime_factor != 1)
+	while (num != 1)
 	{
-		if (prime_factor % div == 0)
+		if (num % prime_factor == 0)
 		{
-			prime_factor /= div;
+			num /= prime_factor;
 		}
 		else
 		{
-			div += 1;
+			prime_factor += 1;
 		}
 	}
-	printf("%d\n", div);
+	printf("%d\n", prime_factor);
 	return (0);
 }

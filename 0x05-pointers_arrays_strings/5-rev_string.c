@@ -5,28 +5,24 @@
 *
 * Auth: DOUIBA Omar.
 */
-
 void rev_string(char *s)
 {
-	int len = 0;
-	char *p_str;
+	char *p_start = s;
+	char *p_end = s;
 
-	while (*s != '\0')
+	while (*p_end != '\0')
 	{
-		s++;
-		len++;
+		p_end++;
 	}
 
-	p_str = s - 1;
+	p_end--;
 
-	while (len > 0)
+	while (p_start < p_end)
 	{
-		char temp = *p_str;
-		*p_str = *s;
-		*s = temp;
-		p_str--;
-		s++;
-		len--;
+		char tmp = *p_start;
+		*p_start = *p_end;
+		*p_end = tmp;
+		p_start++;
+		p_end--;
 	}
-	*p_str = '\0';
 }

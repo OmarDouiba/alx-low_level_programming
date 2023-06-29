@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strncat - function that concatenates two strings.
+* *_strncat - function that concatenates two strings.
 * @dest: destination string.
 * @src: source string.
 * @n: maximum number of characters to be appended from the source string.
@@ -22,5 +22,5 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[len_dest + i] = src[i];
 	}
-	return dest;
+	return (dest);
 }

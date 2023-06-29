@@ -7,7 +7,7 @@
 * Auth: DOUIBA Omar.
 * Return: 0 if s1 is equal to s2.
 *	negative integer, if s1 is lexicographically less than s2.
-*	positive integer, s1 is lexicographically greater than s2.
+*	positive integer, if s1 is lexicographically greater than s2.
 */
 int _strcmp(char *s1, char *s2)
 {

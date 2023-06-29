@@ -6,7 +6,7 @@
 * @n: maximum number of characters to be appended from the source string.
 *
 * Auth: DOUIBA Omar.
-* Reurn : destination string.
+* Return : destination string.
 */
 
 char *_strncat(char *dest, char *src, int n)
@@ -22,6 +22,5 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[len_dest + i] = src[i];
 	}
-	dest[len_dest + i] = '\0';
 	return (dest);
 }

@@ -4,6 +4,7 @@
 * @s: string.
 *
 * Auth: DOUIBA Omar.
+* Return: encoder string.
 */
 
 char *rot13(char *s)

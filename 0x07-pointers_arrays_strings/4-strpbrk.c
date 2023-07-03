@@ -20,18 +20,16 @@ char *_strpbrk(char *s, char *accept)
 		len++;
 	}
 
-	while (s[i] != '\0')
+	for (i = 0; i < len; i++)
 	{
-		j = 0;
-
-		for (; j < len; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 			{
 				return (s + i);
 			}
 		}
-		i++;
 	}
+
 	return ('\0');
 }

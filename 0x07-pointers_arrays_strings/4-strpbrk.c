@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool.h>
 /**
 * _strpbrk -  function that searches a string for any of a set of bytes.
 * @s: string.
@@ -13,6 +14,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j;
 	int len = 0;
+	bool found = false;
 
 	while (s[len] != '\0')
 	{
@@ -27,10 +29,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
+				found = true;
 				break;
 			}
 		}
-		if (j != len)
+		if (found)
 		{
 			return (s + i);
 		}

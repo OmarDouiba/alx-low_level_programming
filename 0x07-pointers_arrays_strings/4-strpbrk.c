@@ -14,7 +14,6 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j;
 	int len = 0;
-	bool found = false;
 
 	while (s[len] != '\0')
 	{
@@ -29,13 +28,8 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				found = true;
-				break;
+				return (s + i);
 			}
-		}
-		if (found)
-		{
-			return (s + i);
 		}
 		i++;
 	}

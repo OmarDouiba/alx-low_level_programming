@@ -36,7 +36,7 @@ char *_strstr(char *haystack, char *needle)
 
 			if (found)
 			{
-				return (haystack + i);
+				return (char*)(haystack + i);
 			}
 		}
 	}

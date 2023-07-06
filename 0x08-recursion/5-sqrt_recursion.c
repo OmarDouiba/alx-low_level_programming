@@ -39,3 +39,5 @@ int _sqrt_(int m, int i)
 	else
 	{
 		return (_sqrt_(m, ++i));
+	}
+}

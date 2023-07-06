@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _puts_recursion - Function that prints a string in reverse.
+* _puts_recursion - Function that prints a string, followed by a new line.
 * @s: String.
 *
 * Auth: DOUIBA Omar.

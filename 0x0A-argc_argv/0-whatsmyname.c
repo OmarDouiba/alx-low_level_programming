@@ -12,25 +12,6 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
-
-	while (*argv[0])
-	{
-		_putchar(*argv[0]);
-		argv[0]++;
-	}
-	_putchar('\n');
+	printf("%s\n", argv[argc - 1]);
 	return (0);
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }

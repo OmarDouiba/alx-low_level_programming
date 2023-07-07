@@ -12,15 +12,24 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
+	_puts(argv[argc - 1]);
+	return (0);
+}
 
-	while (*argv[0])
+/**
+* _puts -  function that prints a string, followed by a new line, to stdout.
+* @str: string.
+*
+* Auth: DOUIBA Omar.
+*/
+void _puts(char *str)
+{
+	while (*str)
 	{
-		_putchar(*argv[0]);
-		argv[0]++;
+		_putchar(*str);
+		str++;
 	}
 	_putchar('\n');
-	return (0);
 }
 
 /**

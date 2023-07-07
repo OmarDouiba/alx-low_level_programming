@@ -21,10 +21,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argv[i][0] >= 'a' && argv[i][0] <= 'z')
+			int j;
+
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error\n");
-				exit(1);
+				if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
+				{
+					printf("Error\n");
+					exit(1);
+				}
 			}
 			add += atoi(argv[i]);
 		}

@@ -1,39 +1,27 @@
 #include "main.h"
-
 char *argstostr(int ac, char **av)
 {
 	int i, j;
-	char **str;
+	char *str;
 
 	if (ac == 0 || av == NULL)
 	{
-		return (NULL);
+		return NULL;
 	}
 
-	str = malloc(atoi(ac) * sizeof(char *));
-	for (i = 0; i < atoi(ac); i++)
-	{
-		str[i] = malloc(strlen(av[i]) * sizeof(char));
-	}
+	str = malloc((ac + 1) * sizeof(char *));
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < atoi(ac); i++)
+	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < strlen(av[i][j]); j++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			if (av[i][j] == ' ')
-			{
-				str[i][j] = '\n';
-			}
-			else
-			{
-				str[i][j] = av[i][j];
-			}
+			strcpy(str[j],av[i][j]);
 		}
+		str[i] = '\n';
 	}
-
 	return (str);
 }

@@ -1,5 +1,22 @@
 #include "main.h"
 /**
+ * _strlen - returns the length of a string
+ * @str: string we find the length of
+ *
+ * Return: length of the string
+ */
+
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+/**
  *str_concat - concatenates two strings.
  *@s1: string 1.
  *@s2: string 2.
@@ -23,8 +40,8 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 
 	s3 = malloc(len1 + len2 + 1);
 	if (s3 == NULL)

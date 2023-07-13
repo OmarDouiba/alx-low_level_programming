@@ -20,24 +20,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 	}
-
 	if (s2 == NULL)
 	{
 		s2 = "";
 	}
-
 	concat = malloc((len_s1 + len_s2) + 1);
 	if (concat == NULL)
 	{
 		return (NULL);
 	}
-
 	for (i = 0; i < len_s1; i++)
 	{
 		concat[i] = s1[i];
 		k++;
 	}
-
 	for (i = 0; i < len_s2; i++)
 	{
 		if (i < n)
@@ -51,8 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		k++;
 	}
-
 	concat[k] = '\0';
-
 	return (concat);
 }

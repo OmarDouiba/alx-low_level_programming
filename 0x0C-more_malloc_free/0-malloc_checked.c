@@ -9,7 +9,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	size_t *ml_check;
+	void *ml_check;
 
 	ml_check = malloc(b);
 	if (ml_check == NULL)

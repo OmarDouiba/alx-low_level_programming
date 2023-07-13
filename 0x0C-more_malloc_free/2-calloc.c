@@ -5,6 +5,7 @@
 * @size: Size (in bytes) of each element.
 *
 * Auth: DOUIBA Omar.
+* Return: Pointer to the allocated memory block.
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -15,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	cal = malloc(nmemb *size);
+	cal = malloc(nmemb * size);
 	if (cal == NULL)
 	{
 		return (NULL);

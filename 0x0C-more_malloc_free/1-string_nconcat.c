@@ -1,5 +1,19 @@
 #include "main.h"
 /**
+*_strlen - calculate string lenth
+*@str: string
+*
+*Return: string lenth
+*/
+int _strlen(char *str)
+{
+	int len = 0;
+
+	for (; str[len] != '\0'; len++) ;
+	return (len);
+}
+
+/**
  * *string_nconcat - concatenates n bytes of the string 2 to another string 1.
  * @s1: string 1.
  * @s2: string 2.
@@ -13,8 +27,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j;
 	unsigned int len_s1, len_s2;
 
-	len_s1 = strlen(s1);
-	len_s2 = strlen(s2);
+	len_s1 = _strlen(s1);
+	len_s2 = _strlen(s2);
 	if (s1 == NULL)
 	{
 		s1 = "";

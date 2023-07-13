@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+* _calloc - Allocates memory for an array and initializes it with zeros.
+* @nmemb: Number of elements to allocate memory for an array.
+* @size: Size (in bytes) of each element.
+*
+* Auth: DOUIBA Omar.
+*/
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *cal;
+
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+
+	cal = malloc(nmemb *size);
+	if (cal == NULL)
+	{
+		return (NULL);
+	}
+
+	return (cal);
+}

@@ -7,21 +7,19 @@
  *
  * Return: pointer to the concat string.
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	unsigned int i;
+	unsigned int i, k = 0;
 	unsigned int len_s1, len_s2;
 
 	len_s1 = strlen(s1);
 	len_s2 = strlen(s2);
 
-	if (s1 == NULL)
+    if (s1 == NULL)
 	{
 		s1 = "";
 	}
-
 	if (s2 == NULL)
 	{
 		s2 = "";
@@ -32,18 +30,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-
+	
 	for (i = 0; i < len_s1; i++)
 	{
-		concat[i] = s1[i];
+	    concat[i] = s1[i];
+	    k++;
 	}
-
-	for (i = 0; i < n; i++)
+	
+	for (i = 0; i < len_s2; i++)
 	{
-		concat[len_s1 + i] = s2[i];
+	    if (i < n)
+	    {
+	        concat[len_s1 + i] = s2[i];
+	    }
+	    else
+	    {
+	        break;
+	    }
+	    k++;
 	}
-
-	concat[len_s1 + n] = '\0';
-
+	concat[k] = '\0';
+	
 	return (concat);
 }

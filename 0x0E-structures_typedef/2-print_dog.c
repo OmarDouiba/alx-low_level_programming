@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * print_dog - function that prints a struct dog
+ * @d: pointer of structer name dog.
+ *
+ * Description: function that prints a struct dog
+ */
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)

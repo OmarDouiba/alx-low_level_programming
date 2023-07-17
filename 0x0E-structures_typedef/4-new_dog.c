@@ -76,6 +76,5 @@ char *_strdup(char *str)
 	{
 		*(dup_str + i) = *(str + i);
 	}
-	dup_str[len] = '\0';
 	return (dup_str);
 }

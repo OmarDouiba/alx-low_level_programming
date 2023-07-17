@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * new_dog - function that creates a new dog
+ * @name: passed from main
+ * @age: passed from main
+ * @owner: passed from main
+ *
+ * Return: pointer to the struct
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog_tt;
@@ -21,6 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_tt->name = _strdup(name);
 	if (dog_tt->name == NULL)
 	{
+		free(dog_tt->name);
 		free(dog_tt);
 		return (NULL);
 	}
@@ -31,6 +41,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog_tt->owner == NULL)
 	{
 		free(dog_tt->name);
+		free(dog_tt->owner);
 		free(dog_tt);
 		return (NULL);
 	}

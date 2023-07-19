@@ -40,7 +40,7 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
-* op_mpd - modulo of two numbers.
+* op_mod - modulo of two numbers.
 * @a: num1.
 * @b: num2.
 * Return: modulo of two numbers.

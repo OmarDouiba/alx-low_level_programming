@@ -1,45 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
- *main - program that perfroms simple operations
- *@ac: number of arguments
- *@av: array of arguments
+ * main - program that perfroms simple operations
+ * @ac: number of arguments
+ * @av: array of arguments
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(int ac, char *av[])
 {
-	(void)ac;
+	int ar1, ar2, result;
+	char op;
+	int (*func)(int, int);
 
-	int num1, num2, result;
-
-	int(*operation)(int, int);
-
-	if (argc != 4)
+	if (ac != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
 
-	num1 = atoi(av[1]);
-	num2 = atoi(av[3]);
-	operation = get_op_func(av[2]);
+	ar1 = atoi(av[1]);
+	ar2 = atoi(av[3]);
 
-	if (!operation)
+	func = get_op_func(av[2]);
+
+	if (!func)
 	{
 		printf("Error\n");
-		return (99);
+		exit(99);
 	}
 
-	if ((*av[2] == '/' || *av[2] == '%') && num2 == 0)
+	op = *av[2];
+
+	if ((op == '/' || op == '%') && ar2 == 0)
 	{
 		printf("Error\n");
-		return (100);
+		exit(100);
 	}
 
-	result = operation(num1, num2);
+	result = func(ar1, ar2);
+
 	printf("%d\n", result);
 
 	return (0);

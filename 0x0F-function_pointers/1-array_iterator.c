@@ -3,7 +3,7 @@
 /**
 * array_iterator: Function that executes a function given as a parameter
 *		on each element of an array.
-* array: the array that we should print.
+* @array: the array that we should print.
 * @size: the size of the array.
 * @action: callbacks function.
 */

@@ -21,10 +21,8 @@ void print_all(const char *const format, ...)
 	{
 		if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
 			format[i] == 's')
-		{
-			switch (format[i])
-			{
-				case 'c':
+		{switch (format[i])
+			{case 'c':
 					printf("%c", va_arg(args, int));
 					break;
 				case 'i':
@@ -44,10 +42,8 @@ void print_all(const char *const format, ...)
 					break;
 			}
 			if (i != n - 1)
-				printf(", ");
-		}
-		i++;
-	}
+				printf(", ");}
+		i++;}
 	printf("\n");
 	va_end(args);
 }

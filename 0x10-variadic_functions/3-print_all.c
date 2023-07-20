@@ -54,7 +54,7 @@ void print_all(const char *const format, ...)
 }
 
 /**
- *print_a_char - Print a character.
+ *print_char - Print a character.
  *@sep: The separator of the character
  *@args: A list of variadic arguments
  *
@@ -65,7 +65,7 @@ void print_char(char *sep, va_list args)
 }
 
 /**
- *print_a_char - Print a integer.
+ *print_int - Print a integer.
  *@sep: The separator of the character
  *@args: A list of variadic arguments
  *
@@ -76,7 +76,7 @@ void print_int(char *sep, va_list args)
 }
 
 /**
- *print_a_char - Print a float.
+ *print_float - Print a float.
  *@sep: The separator of the character
  *@args: A list of variadic arguments
  *
@@ -87,7 +87,7 @@ void print_float(char *sep, va_list args)
 }
 
 /**
- *print_a_char - Print a string.
+ *print_string - Print a string.
  *@sep: The separator of the character
  *@args: A list of variadic arguments
  *

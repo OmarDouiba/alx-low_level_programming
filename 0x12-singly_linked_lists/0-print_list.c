@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
-* print_list - Function that prints all the elements of a list_t list.
-* @h: structure that contain string and lenght of string and next elemnet.
+* print_list - Function that prints all the elements of list.
+* @h: pointer to the head of the list.
 *
 * Return: Number of Nodes.
 */

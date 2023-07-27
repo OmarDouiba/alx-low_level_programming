@@ -28,7 +28,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (str == NULL)
 	{
-		return (NULL);
+		printf("[0] (nil)");
 	}
 
 	tmp->str = strdup(str);

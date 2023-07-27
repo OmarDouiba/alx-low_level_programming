@@ -26,6 +26,11 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *tmp = (struct list_s *) malloc(sizeof(struct list_s));
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	tmp->str = strdup(str);
 	tmp->len = _strlen(str);
 	tmp->next = NULL;

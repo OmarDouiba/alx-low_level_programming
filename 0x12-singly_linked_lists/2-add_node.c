@@ -24,14 +24,26 @@ int _strlen(const char *str)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *tmp = (struct list_s *) malloc(sizeof(struct list_s));
+	list_t *tmp;
 
-	if (str == NULL)
+	if (str == NULL || head == NULL)
 	{
-		printf("[0] (nil)");
+		return (NULL);
+	}
+
+	tmp = (struct list_s *) malloc(sizeof(struct list_s));
+
+	if (tmp == NULL)
+	{
+		return (NULL);
 	}
 
 	tmp->str = strdup(str);
+	if (tmp->str == NULL)
+	{
+		free(tmp);
+		return (NULL);
+	}
 	tmp->len = _strlen(str);
 	tmp->next = NULL;
 
@@ -41,5 +53,5 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	*head = tmp;
-	return (*head);
+	return (tmp);
 }

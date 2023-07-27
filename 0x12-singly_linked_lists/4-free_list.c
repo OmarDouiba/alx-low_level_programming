@@ -5,6 +5,14 @@
 */
 void free_list(list_t *head)
 {
-	free(head->str);
-	free(head);
+	list_t *node;
+
+	while (head)
+	{
+		node = head;
+		head = head->next;
+
+		free(head->str);
+		free(head);
+	}
 }

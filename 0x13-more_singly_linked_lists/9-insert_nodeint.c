@@ -14,7 +14,7 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *curr, *prv, *new_node;
+	listint_t *curr, *new_node;
 
 	if (head == NULL)
 	{

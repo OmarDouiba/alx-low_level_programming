@@ -9,7 +9,7 @@
  * Return: A pointer to the node at the specified index
  * or NULL if index is out of range.
  */
-listint_t* get_nodeint_at_index(listint_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	while (index && head)
 	{

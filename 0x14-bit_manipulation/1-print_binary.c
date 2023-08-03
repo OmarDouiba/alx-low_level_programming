@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 
 	while (shift >= 0)
 	{
-		if ((n >> shift) &mask)
+		if ((n >> shift) & mask)
 		{
 			_putchar('1');
 		}

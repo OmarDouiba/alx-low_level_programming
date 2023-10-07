@@ -9,7 +9,7 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *tmp;
 	unsigned long int index = 0, printed = 0;
 
-	if(!ht)
+	if (!ht)
 		return;
 
 	printf("{");

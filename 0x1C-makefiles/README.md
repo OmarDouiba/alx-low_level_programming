@@ -33,6 +33,7 @@ all:  print
 	echo "Hello, World"
 Output:
 -------
+>> make all
 >> Hi
 >> Hello, World
 
@@ -46,4 +47,20 @@ Ex:
 ---
 file := test.py
 name = omar
+all:
+	echo $(name)
+output:
+------
+>> make all
+>> omar
+```
+#### 3) Disaple echo
+```
+all:
+	@echo "hi"
+it will print 
+Hi
+only instead of
+echo "Hi"
+Hi
 ```

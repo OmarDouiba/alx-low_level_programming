@@ -11,7 +11,7 @@ A Makefile is a simple text file that contains a set of rules describing how to 
 
 .Makefile
 ```
-target: dependencies
+target: dependencies(prerequisites)
     command
 ```
 ## What is make
@@ -21,3 +21,29 @@ make is a build automation tool that is used to compile and build projects. It i
 - To run our tools scripts
 - To automate the process
 - To be fully control on the outputs and its time
+#### 1) Setting rule
+```
+target: prerequisites
+     command
+EX:
+---
+print:
+	echo "Hi"
+all:  print
+	echo "Hello, World"
+Output:
+-------
+>> Hi
+>> Hello, World
+
+```
+#### 2) Define Variable
+```
+var_name := value
+OR
+var_name = value
+Ex:
+---
+file := test.py
+name = omar
+```

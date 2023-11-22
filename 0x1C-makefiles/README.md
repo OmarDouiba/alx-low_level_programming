@@ -66,7 +66,7 @@ Hi
 ```
 
 
-##### **How This line work (OBJ = $(SRC:.c=.o))
+#### How This line work **(OBJ = $(SRC:.c=.o))**
 ```
 consider we have three source files:
 # Source files

@@ -64,3 +64,20 @@ only instead of
 echo "Hi"
 Hi
 ```
+
+
+##### How This line work (OBJ = $(SRC:.c=.o))
+```
+consider we have three source files:
+# Source files
+SRC = main.c utils.c another_file.c
+```
+let's use the line OBJ = $(SRC:.c=.o) to generate a list of object files:
+```
+# Object files
+OBJ = $(SRC:.c=.o)
+```
+After applying the substitution, the OBJ list would look like this:
+```
+OBJ = main.o utils.o another_file.o
+```

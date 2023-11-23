@@ -22,12 +22,14 @@ def island_perimeter(grid):
                 right = grid[i][j + 1]
                 top = grid[i - 1][j]
                 bottom = grid[i + 1][j]
+
+                per += 4
                 if left == 0:
-                    per += 1
+                    per -= 1
                 if right == 0:
-                    per += 1
+                    per -= 1
                 if top == 0:
-                    per += 1
+                    per -= 1
                 if bottom ==  0:
-                    per += 1
+                    per -= 1
     return per
